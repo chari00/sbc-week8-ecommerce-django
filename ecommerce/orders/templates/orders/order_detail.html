@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block title %}Order List{% endblock %}
+
+{% block content %}
+<h1>{{ order.customer_name }}</h1>
+<p>Product name: {{ order.product_name }}</p>
+<p>Quantity: {{order.quantity}}</p>
+<p>Order date: {{order.order_date}}</p>
+<p>Status: {% if order.completed %}Completed{% else %}Not Completed{% endif %}</p>
+<a href="{% url 'order_edit' order.id %}">Edit</a>
+<a href="{% url 'order_delete' order.id %}">Delete</a>
+<a href="{% url 'order_list' %}">Back to List</a>
+
+{% endblock %}
