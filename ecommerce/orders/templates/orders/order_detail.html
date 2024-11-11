@@ -8,8 +8,8 @@
 <p>Quantity: {{order.quantity}}</p>
 <p>Order date: {{order.order_date}}</p>
 <p>Status: {% if order.completed %}Completed{% else %}Not Completed{% endif %}</p>
-<a href="{% url 'order_edit' order.id %}">Edit</a>
-<a href="{% url 'order_delete' order.id %}">Delete</a>
-<a href="{% url 'order_list' %}">Back to List</a>
+<a href="{% url 'order_edit' order.id %}" class="btn btn-primary">Edit</a>
+<a href="{% url 'order_delete' order.id %}" class="btn btn-primary">Delete</a>
+<a href="{% url 'order_list' %}" class="btn btn-primary">Back to List</a>
 
 {% endblock %}
