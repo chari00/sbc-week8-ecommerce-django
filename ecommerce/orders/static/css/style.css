@@ -1,0 +1,19 @@
+*, html{
+    font-weight: 400;
+}
+
+.base-body{
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+h1{
+    font-size: 1.7rem;
+}
+div{
+    margin-top: 50px;
+}
+.btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

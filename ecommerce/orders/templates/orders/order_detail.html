@@ -3,13 +3,15 @@
 {% block title %}Order List{% endblock %}
 
 {% block content %}
-<h1>{{ order.customer_name }}</h1>
-<p>Product name: {{ order.product_name }}</p>
-<p>Quantity: {{order.quantity}}</p>
-<p>Order date: {{order.order_date}}</p>
-<p>Status: {% if order.completed %}Completed{% else %}Not Completed{% endif %}</p>
-<a href="{% url 'order_edit' order.id %}" class="btn btn-primary">Edit</a>
-<a href="{% url 'order_delete' order.id %}" class="btn btn-primary">Delete</a>
-<a href="{% url 'order_list' %}" class="btn btn-primary">Back to List</a>
+<div class="mt-5" >
+    <h1 class="text-[1rem] font-[700]">Customer name: {{ order.customer_name }}</h1>
+    <p>Product name: {{ order.product_name }}</p>
+    <p>Quantity: {{order.quantity}}</p>
+    <p>Order date: {{order.order_date}}</p>
+    <p>Status: {% if order.completed %}Completed{% else %}Not Completed{% endif %}</p>
+    <a href="{% url 'order_edit' order.id %}" class="btn btn-primary">Edit</a>
+    <a href="{% url 'order_delete' order.id %}" class="btn btn-primary">Delete</a>
+    <a href="{% url 'order_list' %}" class="btn btn-primary">Back to List</a>
+</div>
 
 {% endblock %}
