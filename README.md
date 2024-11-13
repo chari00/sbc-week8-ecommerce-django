@@ -13,4 +13,5 @@ This project is a basic Orders Management page for an e-commerce platform. You'l
 
 ## Deployed website URL
 
-- [E-commercer order screen](https://chari00.pythonanywhere.com/)
+- [E-commercer order screen deployed website in pythonanywhere](https://chari00.pythonanywhere.com/)
+- [Ecommerce order screen deployed website in render](https://ecommerce-django-lw3e.onrender.com/)
